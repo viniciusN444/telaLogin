@@ -1,0 +1,107 @@
+/*Importando fonte Nunito do Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*Paleta de cores*/
+:root{
+    --light-green: #33ff66;
+    --dark-green: #0d2f2b;
+    --dark-green-light: #161c1bbf;
+    --input-light-green: #514869;
+    --green: #33ffc2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+}
+
+body{
+    background-color: var(--dark-green);
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    padding: 20px;
+    width: 100%;
+}
+
+.container{
+    background-color: var(--dark-green-light);
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.container h1{
+    text-align: center;
+    color: var(--light-green);
+}
+
+.content{
+    width: 200px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    margin: auto;
+    position: relative;
+}
+
+label{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+input{
+    background-color: var(--input-light-green);
+    color: white;
+    font-size: 1rem;
+}
+
+#txtPassword{
+    margin-bottom: 10px;
+}
+
+input, button{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+button{
+    background-color: var(--light-green);
+    color: var(--dark-green);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: var(--green);
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+
+.logoGit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+i{
+    color: var(--light-green);
+    font-size: 45px;
+}
